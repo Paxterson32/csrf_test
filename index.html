@@ -1,16 +1,25 @@
-<form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label>Username:</label>
-        <input type="text" name="username" value="tester@gmail.com">
-    </div>
-    <br>		
-    <div class="form-group">
-        <label>Status:</label>
-        <input type="checkbox" name="status" value="on">
-    </div>
-    <br>	
-    <button type="submit">Submit</button>
-</form>
-<script>
-    document.forms[0].submit();
-</script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Profil</title>
+</head>
+<body>
+    <form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data"> 
+        <div class="form-group"> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" value="tester@gmail.com" required> 
+        </div> 
+        <br>		 
+        <div class="form-group"> 
+            <label for="status">Status:</label> 
+            <input type="checkbox" id="status" name="status" value="on"> 
+        </div> 
+        <br>	 
+        <button type="submit">Submit</button> 
+    </form> 
+    <script> 
+        document.forms[0].submit(); 
+    </script>
+</body>
+</html>
